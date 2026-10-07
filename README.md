@@ -26,21 +26,18 @@ Official background:
 ```text
 the-line-llm/
 ├── README.md
-├── requirements.txt
 ├── CHANGELOG.md
+├── requirements.txt
 ├── .gitignore
-├── docs/
-│   ├── TECHNICAL_DOCUMENTATION.md
-│   └── context_budget.md
-└── notebooks/
-    ├── Lab_1_THE_LINE.ipynb
-    ├── Lab_2_THE_LINE.ipynb
-    ├── Lab_3a_THE_LINE.ipynb
-    ├── Lab_3b_THE_LINE.ipynb
-    ├── Lab_4_THE_LINE.ipynb
-    ├── Lab_5_THE_LINE.ipynb
-    └── Lab_6_THE_LINE.ipynb
-```
+├── TECHNICAL_DOCUMENTATION.md
+├── context_budget.md
+├── Lab_1_THE_LINE.ipynb
+├── Lab_2_THE_LINE.ipynb
+├── Lab_3a_THE_LINE.ipynb
+├── Lab_3b_THE_LINE.ipynb
+├── Lab_4_THE_LINE.ipynb
+├── Lab_5_THE_LINE.ipynb
+└── Lab_6_THE_LINE.ipynb
 
 ## Lab progression
 
