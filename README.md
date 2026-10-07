@@ -1,79 +1,75 @@
 # THE LINE — LLM Engineering Labs
 
-## Project overview
+## Project Overview
 
-This repository contains a practical training project for **هندسة تطبيقات النماذج اللغوية الكبيرة**. The lab exercises use **THE LINE** as an educational project scenario and apply LLM application-engineering concepts to sustainability topics such as energy efficiency, water management, sustainable materials, and smart infrastructure.
+This repository contains a practical training project developed for the course **هندسة تطبيقات النماذج اللغوية الكبيرة**.
 
-The project is a training prototype. It is **not an official NEOM or THE LINE system**, it does not connect to live project infrastructure, and it does not use real operational data.
+The project uses **THE LINE** as an educational engineering scenario and applies the lab concepts to sustainability-related topics such as energy efficiency, water management, sustainable materials, and smart infrastructure.
 
-The theme was selected to keep the labs connected to a Saudi engineering context. Saudi Vision 2030 identifies NEOM among its major projects, while the official THE LINE material highlights sustainability and innovation as core principles.
-
-Official background:
-- Saudi Vision 2030: https://www.vision2030.gov.sa/
-- THE LINE: https://www.neom.com/en-us/regions/theline
+This is a training prototype only. It is not an official NEOM or THE LINE system and does not use real operational project data.
 
 ## Author
 
-**Awadh Mohammed Alhajri**  
-## Training program
+**Awadh Mohammed Alhajri**
 
-**Program:** هندسة تطبيقات النماذج اللغوية الكبيرة  
-**Training materials:** أ. لطيفة سعد  
+## Training Program
+
+**Program:** هندسة تطبيقات النماذج اللغوية الكبيرة
+
+**Training Materials:** أ. لطيفة سعد
+
 **SDAIA Academy GitHub:** https://github.com/SDAIAAcademy
 
-## Repository contents
+## Project Files
 
-```text
-the-line-llm/
-├── README.md
-├── CHANGELOG.md
-├── requirements.txt
-├── .gitignore
-├── TECHNICAL_DOCUMENTATION.md
-├── context_budget.md
-├── Lab_1_THE_LINE.ipynb
-├── Lab_2_THE_LINE.ipynb
-├── Lab_3a_THE_LINE.ipynb
-├── Lab_3b_THE_LINE.ipynb
-├── Lab_4_THE_LINE.ipynb
-├── Lab_5_THE_LINE.ipynb
-└── Lab_6_THE_LINE.ipynb
+- Lab_1_THE_LINE.ipynb
+- Lab_2_THE_LINE.ipynb
+- Lab_3a_THE_LINE.ipynb
+- Lab_3b_THE_LINE.ipynb
+- Lab_4_THE_LINE.ipynb
+- Lab_5_THE_LINE.ipynb
+- Lab_6_THE_LINE.ipynb
+- TECHNICAL_DOCUMENTATION.md
+- context_budget.md
+- CHANGELOG.md
+- requirements.txt
+- .gitignore
 
-## Lab progression
+## Lab Progression
 
-| Lab | Main concept | Project use |
-|---|---|---|
-| Lab 1 | LLM interface, conversation state, context window | Basic THE LINE engineering assistant skeleton |
-| Lab 2 | Provider abstraction, routing, streaming, retry/fallback | Same request flow across simulated providers |
-| Lab 3a | Structured extraction and validation | Engineering request extraction and validation |
-| Lab 3b | Tool registry, authorization, bounded tool loop | Status checks and engineering consultation booking |
-| Lab 4 | Guarded pipeline | Input checks, PII masking, output checks, attack tests |
-| Lab 5 | Evaluation harness | Golden-set evaluation and regression gate |
-| Lab 6 | Cost/latency optimisation setup | Replay, simple routing, token/cost/latency baseline |
+**Lab 1:** LLM interface, conversation state, and context window.
 
-## How to run
+**Lab 2:** Provider abstraction, routing, streaming, retry, and fallback.
 
-The notebooks are designed for **Google Colab** and should be run in order.
+**Lab 3a:** Structured extraction and validation of engineering requests.
 
-1. Open https://colab.research.google.com/.
-2. Upload a notebook from the `notebooks/` folder.
+**Lab 3b:** Tool registry, authorization, bounded tool loop, and engineering consultation booking.
+
+**Lab 4:** Guarded pipeline with input checks, PII masking, output checks, and attack testing.
+
+**Lab 5:** Evaluation harness using a golden set and regression gate.
+
+**Lab 6:** Cost and latency optimisation using replay, routing, and model selection.
+
+## How to Run
+
+The notebooks are designed for **Google Colab**.
+
+1. Open https://colab.research.google.com/
+2. Upload one of the lab notebooks from this repository.
 3. Select **Runtime → Run all**.
-4. Run the labs in this order: Lab 1, Lab 2, Lab 3a, Lab 3b, Lab 4, Lab 5, Lab 6.
+4. Run the labs in this order:
 
-The exercises use simulated clients and demo responses, so no external model API key is required. Lab 3a uses Pydantic v2.
+Lab 1 → Lab 2 → Lab 3a → Lab 3b → Lab 4 → Lab 5 → Lab 6
 
-For a local Python environment:
+The exercises use simulated clients and demonstration responses. No external model API key is required for the provided lab activities.
 
-```bash
-python -m pip install -r requirements.txt
-```
+## Technical Documentation
 
-## Technical notes
+For additional technical details, see:
 
-The implementation intentionally keeps the structure of the training labs while changing the original service scenario to the THE LINE sustainability-engineering scenario. The notebooks demonstrate patterns rather than production integrations. Values used for demo costs, latency, test targets, IDs, and secret codes are training values only.
+[TECHNICAL_DOCUMENTATION.md](TECHNICAL_DOCUMENTATION.md)
 
-For the detailed flow and design decisions, see [`docs/TECHNICAL_DOCUMENTATION.md`](docs/TECHNICAL_DOCUMENTATION.md).
+## Version Control
 
-## Version control
-
-The repository uses Git with small, topic-based commits. Generated cache files, local environments, and notebook checkpoints are excluded through `.gitignore`. Future changes should be committed with short messages that describe the change clearly.
+This project uses Git for version control. Changes are recorded through clear commits, and unnecessary local files are excluded using `.gitignore`.
